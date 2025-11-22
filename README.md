@@ -89,25 +89,25 @@ Business Logic Layer
 # Database Layer (DAO)
 
 - **🗄️ Database Schema**
-- Users Table
-- ID (PK)
-- USERNAME (UNIQUE)
-- PASSWORD
-- ROLE (ADMIN / TEACHER / STUDENT)
+    - Users Table
+    - ID (PK)
+    - USERNAME (UNIQUE)
+    - PASSWORD
+    - ROLE (ADMIN / TEACHER / STUDENT)
 
 - **Courses Table**
-- ID (PK)
-- TITLE
-- DESCRIPTION
-- INSTRUCTOR
-- SOURCE   -- lecture video link
+    - ID (PK)
+    - TITLE
+    - DESCRIPTION
+    - INSTRUCTOR
+    - SOURCE   -- lecture video link
 
-- Materials Table
-- ID (PK)
-- COURSEID (FK → courses.id)
-- TITLE
-- DESCRIPTION
-- FILEPATH
+- **Materials Table**
+    - ID (PK)
+    - COURSEID (FK → courses.id)
+    - TITLE
+    - DESCRIPTION
+    - FILEPATH
 
 # 🔌 JDBC Connectivity
 
@@ -178,31 +178,31 @@ Login using default credentials (if any provided)
 
 # 🎯 Learning Outcomes
 
-This project showcases knowledge in:
+- This project showcases knowledge in:
 
-Java
+    - Java
 
-OOP Concepts (Encapsulation, Inheritance, Polymorphism, Abstraction)
+        - OOP Concepts (Encapsulation, Inheritance, Polymorphism, Abstraction)
 
-AWT GUI programming
+        - AWT GUI programming
 
-Event-driven programming
+        - Event-driven programming
 
-File handling
+        - File handling
 
-JDBC integration
+       - JDBC integration
 
-DBMS
+    - DBMS
 
-SQL CRUD operations
+        - SQL CRUD operations
 
-Schema design
+        - Schema design
 
-Constraints (PK, FK, UNIQUE)
+        - Constraints (PK, FK, UNIQUE)
 
-Normalization
+        - Normalization
 
-Oracle SQL & JDBC connectivity
+        - Oracle SQL & JDBC connectivity
 
 # 🤝 Contribution
 
