@@ -72,12 +72,12 @@ The system focuses on simplicity, fast performance, and structured learning cont
 
 
 # 🧩 System Architecture
-elearn/
- ├── ui/         → Java AWT Screens (LoginUI, AdminUI, StudentUI, TeacherUI…)
- ├── dao/        → Database interaction classes (UserDAO, CourseDAO…)
- ├── models/     → POJO classes (User, Course, Material)
- ├── db/         → DBConnection.java for Oracle connectivity
- └── Main.java   → Application entry point
+- elearn/
+ - ├── ui/         → Java AWT Screens (LoginUI, AdminUI, StudentUI, TeacherUI…)
+ - ├── dao/        → Database interaction classes (UserDAO, CourseDAO…)
+ - ├── models/     → POJO classes (User, Course, Material)
+ - ├── db/         → DBConnection.java for Oracle connectivity
+ - └── Main.java   → Application entry point
 
 
 The project follows clear separation between:
@@ -88,26 +88,26 @@ Business Logic Layer
 
 # Database Layer (DAO)
 
-🗄️ Database Schema
-Users Table
-ID (PK)
-USERNAME (UNIQUE)
-PASSWORD
-ROLE (ADMIN / TEACHER / STUDENT)
+- **🗄️ Database Schema**
+- Users Table
+- ID (PK)
+- USERNAME (UNIQUE)
+- PASSWORD
+- ROLE (ADMIN / TEACHER / STUDENT)
 
-Courses Table
-ID (PK)
-TITLE
-DESCRIPTION
-INSTRUCTOR
-SOURCE   -- lecture video link
+- **Courses Table**
+- ID (PK)
+- TITLE
+- DESCRIPTION
+- INSTRUCTOR
+- SOURCE   -- lecture video link
 
-Materials Table
-ID (PK)
-COURSEID (FK → courses.id)
-TITLE
-DESCRIPTION
-FILEPATH
+- Materials Table
+- ID (PK)
+- COURSEID (FK → courses.id)
+- TITLE
+- DESCRIPTION
+- FILEPATH
 
 # 🔌 JDBC Connectivity
 
@@ -118,14 +118,14 @@ Connection conn = DriverManager.getConnection(URL, USER, PASS);
 
 # 🧪 Core Functionalities Demonstrated
 
-✔ Database CRUD Operations
-✔ DAO Pattern
-✔ Java GUI Development (AWT)
-✔ Exception Handling
-✔ JDBC Prepared Statements
-✔ Dynamic Polymorphism (Role-based UI loading)
-✔ Modular Application Design
-✔ Handling external file paths & URLs
+- ✔ Database CRUD Operations
+- ✔ DAO Pattern
+- ✔ Java GUI Development (AWT)
+- ✔ Exception Handling
+- ✔ JDBC Prepared Statements
+- ✔ Dynamic Polymorphism (Role-based UI loading)
+- ✔ Modular Application Design
+- ✔ Handling external file paths & URLs
 
 ## 📺 Screens Included
 
